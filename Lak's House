@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lak's House | Indian Restaurant</title>
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            background-color: #121212;
+            color: #f8f3e7;
+        }
+        h1, h2, h3 {
+            color: #ffb700;
+            text-align: center;
+        }
+
+        /* Header Section */
+        .header {
+            padding: 20px;
+            text-align: center;
+            background: #121212;
+        }
+        .header h1 {
+            font-size: 3em;
+            animation: glow 2s ease-in-out infinite alternate;
+        }
+        .header h2 {
+            font-size: 1.5em;
+            font-style: italic;
+            letter-spacing: 2px;
+            animation: slideIn 1.5s ease-in-out;
+        }
+        @keyframes glow {
+            from { text-shadow: 0 0 10px #ffb700, 0 0 20px #ffb700, 0 0 30px #ffb700; }
+            to { text-shadow: 0 0 20px #ffd700, 0 0 30px #ffd700, 0 0 40px #ffd700; }
+        }
+        @keyframes slideIn {
+            0% { opacity: 0; transform: translateY(-20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Navbar */
+        .navbar {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 15px 0;
+            background-color: #1c1c1c;
+            position: sticky;
+            top: 0;
+        }
+        .navbar a {
+            color: #ffb700;
+            text-decoration: none;
+            font-size: 1.2em;
+            transition: color 0.3s ease;
+        }
+        .navbar a:hover {
+            color: #ffd700;
+        }
+
+        /* Sections */
+        section {
+            padding: 50px 20px;
+            text-align: center;
+        }
+        .hero {
+            background-image: url('https://img.freepik.com/free-photo/top-view-eid-al-fitr-celebration-with-delicious-food_23-2151205134.jpg?t=st=1730653012~exp=1730656612~hmac=18c7945aaa31c2675b57e2caf74d79c4e5a11ef145c5478a67493dfbcd683dfe&w=740');
+            background-size: cover;
+            background-position: center;
+            color: #f8f3e7;
+            padding: 100px 20px;
+        }
+
+        /* Menu Section */
+        .menu {
+            background-color: #1a1a1a;
+        }
+        .menu-item {
+            display: inline-block;
+            width: 250px;
+            padding: 20px;
+            margin: 10px;
+            background-color: #2a2a2a;
+            border-radius: 8px;
+            color: #f8f3e7;
+        }
+        .menu-item h3 {
+            margin-bottom: 10px;
+        }
+
+        /* About Section */
+        .about {
+            background-color: #1c1c1c;
+            color: #f8f3e7;
+        }
+        .about p {
+            max-width: 600px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        /* Gallery Section */
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+        }
+        .gallery img {
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Contact Section */
+        .contact {
+            background-color: #1a1a1a;
+        }
+        .contact-form {
+            max-width: 500px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .contact-form input,
+        .contact-form textarea {
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #2a2a2a;
+            color: #f8f3e7;
+        }
+        .contact-form button {
+            padding: 12px;
+            background-color: #ffb700;
+            border: none;
+            color: #121212;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .contact-form button:hover {
+            background-color: #ffd700;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <div class="header">
+        <h1>Lak's House</h1>
+        <h2>An Authentic Indian Experience</h2>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#about">About Us</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <h1>Welcome to Lak's House</h1>
+        <p>Discover the finest Indian cuisine in a luxurious ambiance</p>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="menu" id="menu">
+        <h2>Our Menu</h2>
+        <div class="menu-item">
+                   </div>
+        <div class="menu-item">
+            <h3>Biryani</h3>
+            <p>Fragrant rice cooked with spices and succulent meat or vegetables.</p>
+            <img src="https://img.freepik.com/free-photo/side-view-rice-garnish-with-fried-onion-carrot-greens-chili-pepper-table_141793-5069.jpg?t=st=1730651321~exp=1730654921~hmac=a54e30539be1e242a7ca9b2f5c011ccd1502a633063ff8313dff83f7b9736c37&w=1380" alt="Biryani" style="width:100%; border-radius: 8px;">        </div>
+        <div class="menu-item">
+            <h3>Paneer Tikka</h3>
+            <p>Marinated paneer grilled to perfection with aromatic spices.</p>
+<img src="https://img.freepik.com/free-photo/delicious-street-food-still-life_23-2151535340.jpg?t=st=1730653276~exp=1730656876~hmac=c697db3fd88c2c76e339ff1423dda359a965fd82658e9bb79b99658d5c4d68c2&w=740" alt="paneer tikka" style="width:100%; max-width:600px; border-radius: 8px; margin: 20px auto;">
+
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <h2>About Indian Dishes and Culture</h2>
+        <p>Indian cuisine is a rich tapestry of flavors and traditions, deeply rooted in culture and history. Each dish reflects the region’s unique spices, techniques, and traditions. Here are some highlights:</p>
+        <p><strong>Biryani:</strong> A signature rice dish enjoyed in multiple regional styles, from Hyderabadi to Kolkata. Here is a beautiful example of biryani:</p>
+        <img src="https://img.freepik.com/free-photo/side-view-rice-garnish-with-fried-onion-carrot-greens-chili-pepper-table_141793-5069.jpg?t=st=1730651321~exp=1730654921~hmac=a54e30539be1e242a7ca9b2f5c011ccd1502a633063ff8313dff83f7b9736c37&w=1380" alt="Biryani" style="width:100%; max-width:600px; border-radius: 8px; margin: 20px auto;">
+        <p><strong>Butter Chicken:</strong> Originating from Delhi, this creamy, mildly spiced curry is made with tandoori-cooked chicken in a rich tomato-butter sauce, often enjoyed with naan or rice.</p>
+        <p><strong>Paneer Tikka:</strong> A vegetarian delight, marinated and grilled paneer pieces served with mint chutney.</p>
+        <p>Each region of India brings unique flavors to its dishes, from the seafood-rich coastlines of Kerala to the spicy vegetarian fare of Rajasthan. Food is also central to Indian festivals, with sweets and savory treats symbolizing celebration and unity.</p>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery" id="gallery">
+        <h2>Gallery</h2>
+        <div>
+            <img src="https://img.freepik.com/free-photo/vertical-shot-vegetable-curry-with-cauliflower-beans-corn-spicy-pepper-lime_181624-31901.jpg?t=st=1730652821~exp=1730656421~hmac=4b8867679b3d5ff0eb5ff71c605e40a19d94802017d3b21536d70d85f05555e7&w=740" alt="Curry">
+            <img src="https://img.freepik.com/free-photo/top-view-pakistan-meal-assortment_23-2148821514.jpg?t=st=1730651115~exp=1730654715~hmac=efc7cc2d12d785a9c3a072e62cdad5aec48799981781770117f93335773b5583&w=740" alt="Pakistani Meal">
+            <img src="https://img.freepik.com/free-photo/deep-fried-samosas-rustic-crockery-plate-generated-by-ai_188544-41080.jpg?t=st=1730652687~exp=1730656287~hmac=71709840e320ef339da0f3e9ffc9d777097473c43bb2a61c6c21334f6d23a60a&w=1380" alt="Samosa">
+            <img src="https://img.freepik.com/free-photo/pre-prepared-food-showcasing-ready-eat-delicious-meals-go_23-2151246075.jpg?t=st=1730652739~exp=1730656339~hmac=bc992b417b01c1205bbd1d369b60873d15eef5be01780bf837e4c91a18b14f25&w=740" alt="Indian Dishes">
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <h2>Contact Us</h2>
+        <form class="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+</body>
+</html>
